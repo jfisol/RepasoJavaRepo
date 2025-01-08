@@ -51,6 +51,9 @@ public class Main {
         System.out.println("==== LISTAR CLIENTE ==== \n");
         CopiaCliente.forEach(System.out::println);
 
+        System.out.println("----------- Paginacion ------------");
+        List<Cliente>paginable = repo.Listar(1,3);
+        paginable.forEach(System.out::println);
 
 
 

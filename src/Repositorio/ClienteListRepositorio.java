@@ -21,7 +21,7 @@ public class ClienteListRepositorio implements CRUDRepositorio, OrdenableReposit
     public Cliente obtener(Integer id) {
         Cliente c = null;
         for (var cli:dataSource) {
-            if(cli.getId().equals(id)){
+            if(cli.getId() != null && cli.getId().equals(id)){
                 c = cli;
                 break;
             }
