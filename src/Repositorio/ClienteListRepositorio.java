@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class ClienteListRepositorio implements CRUDRepositorio, OrdenableRepositorio,PaginableRepositorio {
+public class ClienteListRepositorio implements OrdenablePaginableCRUDRepositorio {
     private List<Cliente>dataSource;
 
     public ClienteListRepositorio(List<Cliente> dataSource) {
@@ -96,5 +96,10 @@ public class ClienteListRepositorio implements CRUDRepositorio, OrdenableReposit
     @Override
     public List<Cliente> Listar(int desde, int hasta) {
         return this.dataSource.subList(desde,hasta);//subList es una funcion de estructura List
+    }
+
+    @Override
+    public int total() {
+        return dataSource.size();
     }
 }
