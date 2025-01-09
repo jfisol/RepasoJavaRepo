@@ -2,6 +2,7 @@ package Repositorio;
 
 import modelo.Cliente;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -58,27 +59,32 @@ public class ClienteListRepositorio implements CRUDRepositorio, OrdenableReposit
 
     @Override
     public List<Cliente> Listar(String campo, Direccion direccion) {
+        //Si se ordena con el dataSource se afecta directamente la lista principal y afecta el listar por eso creamos otra lista
+        List<Cliente> listaC = new ArrayList<>(this.dataSource);
         //se inserta el sort de forma automatica .sort(new Compara..)
-        this.dataSource.sort(new Comparator<Cliente>() {
+        listaC.sort(new Comparator<Cliente>() {//
             //metodo compareTo(comparator) retorna un entero
             @Override
             public int compare(Cliente c1, Cliente c2) {
                     int resultado = 0;
                 if (direccion.equals(Direccion.ASC)){
-                    switch (campo){
-                        case "id" -> resultado = c1.getId().compareTo(c2.getId());
-                        case "nombre" -> resultado = c1.getNombre().compareTo(c2.getNombre());
-                        case "apellido" -> resultado = c1.getApellido().compareTo(c2.getApellido());
-                    }
+                  resultado = this.ordenar(c1,c2);
 
                 }else if (direccion.equals(Direccion.DESC)){
 
-                    switch (campo){
-                        case "id" -> resultado = c2.getId().compareTo(c1.getId());
-                        case "nombre" -> resultado = c2.getNombre().compareTo(c1.getNombre());
-                        case "apellido" -> resultado = c2.getApellido().compareTo(c1.getApellido());
-                    }
+                  resultado =  this.ordenar(c2,c1);
 
+                }
+
+                    return  resultado;
+            }
+
+            public int ordenar(Cliente a, Cliente b){
+             int resultado = 0;
+                switch (campo){
+                    case "id" -> resultado = a.getId().compareTo(b.getId());
+                    case "nombre" -> resultado = a.getNombre().compareTo(b.getNombre());
+                    case "apellido" -> resultado = a.getApellido().compareTo(b.getApellido());
                 }
 
                 return resultado;
