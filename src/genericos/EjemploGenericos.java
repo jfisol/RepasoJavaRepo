@@ -37,4 +37,18 @@ public class EjemploGenericos {
         }
      return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista
     }
+
+    /*Limitar los tipos genericos se agrega un extends con el tipo de numeros que se quiera limitar*/
+    //Bounded Generics
+    public static <T extends Number> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
+
+        return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista
+    }
+
+    /*Tambien se puede limitar a una interfaz por ejemplo comparable */
+    public static <T extends Number & Comparable> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
+
+        return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista
+    }
+
 }
