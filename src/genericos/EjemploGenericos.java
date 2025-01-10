@@ -48,7 +48,7 @@ public class EjemploGenericos {
     /*Tambien se puede limitar a una interfaz por ejemplo comparable */
     public static <T extends Number & Comparable> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
 
-        return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista
+        return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista.
     }
 
 }
