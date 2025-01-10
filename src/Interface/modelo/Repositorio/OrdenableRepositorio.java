@@ -1,6 +1,6 @@
-package Repositorio;
+package Interface.modelo.Repositorio;
 
-import modelo.Cliente;
+import Interface.modelo.Cliente;
 
 import java.util.List;
 

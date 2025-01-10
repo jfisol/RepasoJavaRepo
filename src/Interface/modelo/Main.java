@@ -1,5 +1,7 @@
-import Repositorio.ClienteListRepositorio;
-import modelo.Cliente;
+package Interface.modelo;
+
+import Interface.modelo.Repositorio.ClienteListRepositorio;
+import Interface.modelo.Cliente;
 
 import java.util.ArrayList;
 import java.util.List;

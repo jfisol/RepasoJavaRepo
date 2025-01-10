@@ -1,8 +1,7 @@
-package Repositorio;
+package Interface.modelo.Repositorio;
 
-import modelo.Cliente;
+import Interface.modelo.Cliente;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface CRUDRepositorio {

@@ -1,4 +1,4 @@
-package modelo;
+package Interface.modelo;
 
 public class Cliente extends BaseEntity {
 

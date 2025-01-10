@@ -1,4 +1,4 @@
-package modelo;
+package Interface.modelo;
 
 import java.util.Objects;
 
