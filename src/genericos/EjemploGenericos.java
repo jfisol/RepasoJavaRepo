@@ -1,6 +1,7 @@
 package genericos;
 
 import Interface.modelo.Cliente;
+import Interface.modelo.ClientePremium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,6 +26,24 @@ public class EjemploGenericos {
 
         List<String> nombres = fromArrayToList(new String[]{"a","b","c"},new Integer[]{1,2,3,4});
         nombres.forEach(System.out::println);
+
+
+
+        //IMPRIMIR LOS DATOS CON LA FUNCION PARA IMPRIMIR LISTA
+        System.out.println("Imprimir clientes de la funcion para clipboars");
+        imprimirClientes(clientes);
+        imprimirClientes(clienteList);
+
+        //CREANDO CLASE CLIENTE PREMIUM (CLASE HIJA)
+        List<ClientePremium> clientePremium = new ArrayList<>();
+        clientePremium.add(new ClientePremium("Cliente","Premium"));
+        clientePremium.add(new ClientePremium("Cliente2","Premium2"));
+        clientePremium.add(new ClientePremium("Cliente3","Premium3"));
+
+        //USAMOS LA FUNCION IMPRIMIRCLIENTES DONDE SE AGREGA EL ? PARA IMPRIMIR CLASES HIJAS
+        System.out.println("Clientes Premium");
+        imprimirClientes(clientePremium);
+
     }
 
     public static <T> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
@@ -40,15 +59,23 @@ public class EjemploGenericos {
 
     /*Limitar los tipos genericos se agrega un extends con el tipo de numeros que se quiera limitar*/
     //Bounded Generics
-    public static <T extends Number> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
+  /*  public static <T extends Number> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
 
         return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista
-    }
+    }*/
+
 
     /*Tambien se puede limitar a una interfaz por ejemplo comparable */
     public static <T extends Number & Comparable> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
 
         return Arrays.asList(c); //metodo que recibe un arreglo y lo combierte en lista
+    }
+
+    /*Waildcards Genercis*/
+
+    public static void imprimirClientes(List<? extends Cliente> clientes){//aca solo se puede imprimir los clientes de la clase padre
+        //Al colocarle el ? permite pasarle cualquier tipo de cliente (clases hijas)
+        clientes.forEach(System.out::println);
     }
 
 }

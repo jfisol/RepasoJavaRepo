@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fedd1916-31ad-424b-8d06-9adfcd2dbb8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/genericos/EjemploGenericos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface/modelo/ClientePremium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/CRUDRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/CRUDRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/ClienteListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/ClienteListRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/ContableRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/ContableRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/Direccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/OrdenablePaginableCRUDRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/OrdenablePaginableCRUDRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/OrdenableRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/OrdenableRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositorio/PaginableRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/PaginableRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/genericos/EjemploGenericos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/genericos/EjemploGenericos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +42,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "add/HerenciaMultipleInterface",
+    "git-widget-placeholder": "add/boundedGenerics",
     "last_opened_file_path": "C:/Users/jojul/OneDrive/Escritorio/Notas forenses/GenericosJavaRepaso"
   }
 }]]></component>
