@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fedd1916-31ad-424b-8d06-9adfcd2dbb8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interface/modelo/ClientePremium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/genericos/EjemploGenericos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/genericos/EjemploGenericos.java" afterDir="false" />
     </list>
@@ -42,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "add/boundedGenerics",
+    "git-widget-placeholder": "add/wildcardsGenercis",
     "last_opened_file_path": "C:/Users/jojul/OneDrive/Escritorio/Notas forenses/GenericosJavaRepaso"
   }
 }]]></component>

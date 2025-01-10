@@ -44,6 +44,11 @@ public class EjemploGenericos {
         System.out.println("Clientes Premium");
         imprimirClientes(clientePremium);
 
+
+        //PROBANDO EL NUMERO MAXIMO(COMPARETO)
+        //maximo entre 4 ,9 y 10;
+        System.out.println("Maximo entre 4 ,9, 10: ===> "+maximo(4,9,10));
+
     }
 
     public static <T> List<T> fromArrayToList(T [] c){//<T> se especifica un metodo generico
@@ -77,5 +82,19 @@ public class EjemploGenericos {
         //Al colocarle el ? permite pasarle cualquier tipo de cliente (clases hijas)
         clientes.forEach(System.out::println);
     }
+
+    /*METODOS genericos maximo 3 comparables (COMPARABLES)*/
+    public  static <T extends Comparable<T>> T maximo(T a,T b, T c){
+        T max = a; //definimos el numeto maximo
+
+        if (b.compareTo(a) > 0){
+                max =b;
+        }
+        if (c.compareTo(b) > 0){
+            max = c;
+        }
+        return max;
+    }//recordar que comparable es un tipo interfaz que contiene el metodo compareTo, contiene las clases wrappers
+
 
 }
