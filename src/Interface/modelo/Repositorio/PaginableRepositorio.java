@@ -4,8 +4,8 @@ import Interface.modelo.Cliente;
 
 import java.util.List;
 
-public interface PaginableRepositorio {
+public interface PaginableRepositorio<T> {
 
-    List<Cliente> Listar(int desde, int hasta);
+    List<T> Listar(int desde, int hasta);
 
 }

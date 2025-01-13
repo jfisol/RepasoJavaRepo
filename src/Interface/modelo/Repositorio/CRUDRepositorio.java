@@ -4,13 +4,13 @@ import Interface.modelo.Cliente;
 
 import java.util.List;
 
-public interface CRUDRepositorio {
+public interface CRUDRepositorio<T> {
 
-    List<Cliente>listar();
-    Cliente obtener(Integer id);//metodo GET
-    void CrearCliente(Cliente cliente);
+    List<T>listar();
+    T obtener(Integer id);//metodo GET
+    void CrearCliente(T cliente);
 
-    void EditarCliente(Cliente cliente);//Cuando se crea un cliente se crea un cliente nuevo
+    void EditarCliente(T cliente);//Cuando se crea un cliente se crea un cliente nuevo
 
     void EliminarCliente(Integer id);
 

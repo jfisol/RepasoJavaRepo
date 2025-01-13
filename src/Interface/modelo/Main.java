@@ -1,7 +1,7 @@
 package Interface.modelo;
 
+import Interface.modelo.Repositorio.AbstractListRepositorio;
 import Interface.modelo.Repositorio.ClienteListRepositorio;
-import Interface.modelo.Cliente;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class Main {
         }*/
 
         System.out.println("==== Usando ClienteRepositorio para array List==== ");
-        ClienteListRepositorio repo = new ClienteListRepositorio(listaClientes);
+        ClienteListRepositorio repo = new ClienteListRepositorio();
         repo.CrearCliente(nuevo);
         repo.CrearCliente(nuevo1);
         repo.CrearCliente(nuevo2);
@@ -63,3 +63,5 @@ public class Main {
 
     }
     }
+
+

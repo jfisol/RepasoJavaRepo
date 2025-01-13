@@ -4,7 +4,7 @@ import Interface.modelo.Cliente;
 
 import java.util.List;
 
-public interface OrdenableRepositorio  {
+public interface OrdenableRepositorio<T> {
 
-    List<Cliente> Listar(String campo, Direccion direccion);
+    List<T> Listar(String campo, Direccion direccion);
 }

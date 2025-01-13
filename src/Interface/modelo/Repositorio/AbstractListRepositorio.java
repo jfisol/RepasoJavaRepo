@@ -7,10 +7,18 @@ import java.util.Comparator;
 import java.util.List;
 
 //ESTA CLASE PUEDE INTEGRAR CUALQUIER CLASE DE TIPO DE OBJETOS CONCRETA
-public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
+public abstract class AbstractListRepositorio<T> implements OrdenablePaginableCRUDRepositorio<T> {
+    protected List<T>dataSource;
 
+    public AbstractListRepositorio() {
+        this.dataSource = new ArrayList<>();
+    }
 
-    //Obtener por ID
+    @Override
+    public List<T> listar() {
+        return this.dataSource;
+    }
+  /*  //Obtener por ID
     @Override
     public Cliente obtener(Integer id) {
         Cliente c = null;
@@ -21,11 +29,17 @@ public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
             }
         }
         return c;
-    }
-
+    }*/
 
     @Override
-    public void EditarCliente(Cliente cliente) {
+    public void CrearCliente(T t) {
+
+        this.dataSource.add(t);
+
+    }
+/*
+    @Override
+    public void EditarCliente(Client cliente) {
       Cliente cli = this.obtener(cliente.getId());//Obtenemos el cliente que hay en la lista.
         cli.setNombre(cliente.getNombre());
         cli.setApellido(cliente.getApellido());
@@ -34,11 +48,16 @@ public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
        /* Cliente clie = this.porId(t.getId());
         clie.setNombre(t.getNombre());
         clie.setApellido(t.getApellido());
-        
-*/
+
+
+    }*/
+
+    @Override
+    public void EliminarCliente(Integer id) {
+        T cli = this.obtener(id);//Obtenemos el cliente que hay en la lista.
+        this.dataSource.remove(cli);
     }
-
-
+/*
     @Override
     public List<Cliente> Listar(String campo, Direccion direccion) {
         //Si se ordena con el dataSource se afecta directamente la lista principal y afecta el listar por eso creamos otra lista
@@ -73,7 +92,15 @@ public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
             }
         });
         return this.dataSource;
+    }*/
+
+    @Override
+    public List<T> Listar(int desde, int hasta) {
+        return this.dataSource.subList(desde,hasta);//subList es una funcion de estructura List
     }
 
-
+    @Override
+    public int total() {
+        return dataSource.size();
+    }
 }

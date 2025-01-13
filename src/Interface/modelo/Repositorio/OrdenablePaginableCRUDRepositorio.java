@@ -3,5 +3,5 @@ package Interface.modelo.Repositorio;
 
 
 //Herencia Multiple de interfaces.
-public interface OrdenablePaginableCRUDRepositorio extends OrdenableRepositorio, PaginableRepositorio,CRUDRepositorio, ContableRepositorio{
+public interface OrdenablePaginableCRUDRepositorio<T> extends OrdenableRepositorio<T>, PaginableRepositorio<T>,CRUDRepositorio<T>, ContableRepositorio{
 }
