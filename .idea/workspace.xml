@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fedd1916-31ad-424b-8d06-9adfcd2dbb8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/AbstractListRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/CRUDRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/CRUDRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/ClienteListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/ClienteListRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/OrdenablePaginableCRUDRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/OrdenablePaginableCRUDRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/OrdenableRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/OrdenableRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/PaginableRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/PaginableRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/AbstractListRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/modelo/Repositorio/AbstractListRepositorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;add/ClaceGenericasT&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jojul/OneDrive/Escritorio/Notas forenses/GenericosJavaRepaso&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "add/ejemploRepoGenerics",
+    "last_opened_file_path": "C:/Users/jojul/OneDrive/Escritorio/Notas forenses/GenericosJavaRepaso"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Interface.modelo.Repositorio" />

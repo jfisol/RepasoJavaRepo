@@ -1,5 +1,6 @@
 package Interface.modelo.Repositorio;
 
+import Interface.modelo.BaseEntity;
 import Interface.modelo.Cliente;
 
 import java.util.ArrayList;
@@ -7,7 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 //ESTA CLASE PUEDE INTEGRAR CUALQUIER CLASE DE TIPO DE OBJETOS CONCRETA
-public abstract class AbstractListRepositorio<T> implements OrdenablePaginableCRUDRepositorio<T> {
+public abstract class AbstractListRepositorio<T extends BaseEntity> implements OrdenablePaginableCRUDRepositorio<T> {
     protected List<T>dataSource;
 
     public AbstractListRepositorio() {
@@ -18,10 +19,10 @@ public abstract class AbstractListRepositorio<T> implements OrdenablePaginableCR
     public List<T> listar() {
         return this.dataSource;
     }
-  /*  //Obtener por ID
+   //Obtener por ID
     @Override
-    public Cliente obtener(Integer id) {
-        Cliente c = null;
+    public T obtener(Integer id) {
+        T c = null;
         for (var cli:dataSource) {
             if(cli.getId() != null && cli.getId().equals(id)){
                 c = cli;
@@ -29,7 +30,7 @@ public abstract class AbstractListRepositorio<T> implements OrdenablePaginableCR
             }
         }
         return c;
-    }*/
+    }
 
     @Override
     public void CrearCliente(T t) {

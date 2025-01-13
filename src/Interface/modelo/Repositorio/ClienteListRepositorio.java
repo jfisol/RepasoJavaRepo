@@ -9,7 +9,7 @@ import java.util.List;
 //ESTA CLASE PUEDE INTEGRAR CUALQUIER CLASE DE TIPO DE OBJETOS CONCRETA
 public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
 
-
+/*
     //Obtener por ID
     @Override
     public Cliente obtener(Integer id) {
@@ -21,7 +21,7 @@ public class ClienteListRepositorio extends AbstractListRepositorio<Cliente> {
             }
         }
         return c;
-    }
+    }*/
 
 
     @Override
